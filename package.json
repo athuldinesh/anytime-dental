@@ -1,0 +1,14 @@
+{
+  "name": "anytime-dental",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anytime Dental: website, online booking, WhatsApp reminders, surveys and group broadcasts.",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "install:all": "npm --prefix server ci && npm --prefix web ci",
+    "build": "npm --prefix web run build",
+    "start": "node server/src/index.js",
+    "test": "npm --prefix server test",
+    "qa": "node qa/shots.cjs"
+  }
+}
